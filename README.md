@@ -1,5 +1,5 @@
 # dify
-#1 prepare dependent resources
+# 1 prepare dependent resources
   a. posgresql, redis, vectordb/milvus
   b. external storage/OBS etc
   c. ELB as ingress controller
