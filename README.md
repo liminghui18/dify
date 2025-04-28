@@ -12,5 +12,7 @@
 kubectl patch storageclass сsi-disk -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
 kubectl exec -it dify-api-pod -n dify -- flask db upgrade
 
-kubectl run test-pod --image=busybox --rm -it --restart=Never -- sh 
+kubectl run test-pod --image=busybox --rm -it --restart=Never -- sh to test pods
+nc -zv 10.0.0.115 5432
+telnet 10.0.0.115 5432 to test if port can be connected
 
