@@ -139,7 +139,7 @@
             <mxPoint x="727" y="-1" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Wy4m1eBd9flb5pK3FDR8-4" value="Dify2OpenAI" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.api_gateway;fillColor=#D9A741;gradientColor=none;" vertex="1" parent="1">
+        <mxCell id="Wy4m1eBd9flb5pK3FDR8-4" value="Dify2OpenAI&lt;div&gt;https://github.com/fatwang2/dify2openai&lt;/div&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.api_gateway;fillColor=#D9A741;gradientColor=none;" vertex="1" parent="1">
           <mxGeometry x="542" y="-32.5" width="52.25" height="55" as="geometry" />
         </mxCell>
         <mxCell id="Wy4m1eBd9flb5pK3FDR8-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.117;entryY=0.52;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Wy4m1eBd9flb5pK3FDR8-4" target="HMCnFXwHoIg8V-Ax1Z1f-35">
