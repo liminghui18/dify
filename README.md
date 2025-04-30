@@ -16,3 +16,6 @@ kubectl run test-pod --image=busybox --rm -it --restart=Never -- sh to test pods
 nc -zv 10.0.0.115 5432
 telnet 10.0.0.115 5432 to test if port can be connected
 
+# install dify2openai so that client/chatbox can connect to dify via openai api
+kompose-windows-amd64.exe -f docker-compose-image.yml convert
+
