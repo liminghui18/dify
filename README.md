@@ -41,6 +41,10 @@ ingress: https: domain name: blank  path:/  destionation service : dify2openai p
 api path:/chat/completions  by defalut for chat
 model: dify 
 
+configure for ios chatbox
+API host: http yes, https not working
+you need to check the checkbox-改善网络兼容性
+
 
 
 
