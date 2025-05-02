@@ -1,4 +1,5 @@
 # dify
+create helm template  tar -czvf dify2openai.tgz dify2open
 # 1 prepare dependent resources
       posgresql, 
       redis, 
@@ -25,6 +26,23 @@ docker build -t dify2openai-j .
 docker tag dify2openai-j jenux0erp/dify2openai-j:latest
 docker login
 docker push jenux0erp/dify2openai:latest
+
+configure difyopenai
+DIFY_API_URL: http://dify.hw-onboarding.ru/v1
+
+troubleshooting dify2openai
+https://87.242.94.72  :Congratulations! Your project has been successfully deployed.
+https://87.242.94.72/v1/models   {"object":"list","data":[{"id":"dify","object":"model","owned_by":"dify","permission":[]}]}
+post: chat/completion: 200 OK
+
+confgure web chatbox:
+api hosts: https://87.242.94.72/v1
+ingress: https: domain name: blank  path:/  destionation service : dify2openai port:3000
+api path:/chat/completions  by defalut for chat
+model: dify 
+
+
+
 
 
 
