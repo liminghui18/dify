@@ -19,3 +19,12 @@ telnet 10.0.0.115 5432 to test if port can be connected
 # install dify2openai so that client/chatbox can connect to dify via openai api
 kompose-windows-amd64.exe -f docker-compose-image.yml convert
 
+#build dify2openai image to fix permissions issues null->[]
+prepare 4 files package.json, package-lock.json,app.js,Dockerfile
+docker build -t dify2openai-j .
+docker tag dify2openai-j jenux0erp/dify2openai-j:latest
+docker login
+docker push jenux0erp/dify2openai:latest
+
+
+
