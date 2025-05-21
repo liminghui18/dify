@@ -1,2 +1,6 @@
 # you need to enable authentication for milvus, as dify will connect it with authentication
 then you need use dedicated ELB ingress without nginx so that authentcation will be passed to service
+
+milvus use config.tpl in helm to populate inject additional values from my-value.yaml, then milvus.config(convert from config.tpl, milvus is chart name) was included in ConfigMap definition
+
+ragflow use ragflow_config.yaml/ConfigMap to include service_conf.yaml.template
