@@ -2,5 +2,8 @@
 then you need use dedicated ELB ingress without nginx so that authentcation will be passed to service
 
 milvus use config.tpl in helm to populate inject additional values from my-value.yaml, then milvus.config(convert from config.tpl, milvus is chart name) was included in ConfigMap definition
+# to use external kafka(Huawei Cloud DMS/kafka, you need enable **topic automation create** first
+# to use OBS, you better create a root path under specified bucket. 
+# the others please refer to helm template
 
 ragflow use ragflow_config.yaml/ConfigMap to include service_conf.yaml.template
